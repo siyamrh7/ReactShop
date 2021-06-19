@@ -17,7 +17,7 @@ const Register = () => {
     const post=(e)=>{
         
 e.preventDefault()
-axios.post('/user/register',data).then(res=>setRes(res.data)).catch(err=>console.log(err))
+axios.post('https://reactbanshop.herokuapp.com/user/register',data).then(res=>setRes(res.data)).catch(err=>console.log(err))
     }
    useEffect(()=>{
        const {msg,user}=RES

@@ -14,7 +14,7 @@ const History = () => {
     const fetch=async()=>{
         const headers = { 'Accept': 'application/json', 'Content-Type': 'application/json' }
         headers['Authorization'] = token
-const {data}=await axios.get('/user/history',{headers:headers})
+const {data}=await axios.get('https://reactbanshop.herokuapp.com/user/history',{headers:headers})
 const set=()=>{
     setOrders(data.orders)
     setUser(data.user)

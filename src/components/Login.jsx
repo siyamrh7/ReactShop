@@ -20,7 +20,7 @@ const Login = () => {
     }
     const post=(e)=>{
 e.preventDefault()
-axios.post('/user/login',data).then(res=>setRes(res.data)).catch(err=>console.log(err))
+axios.post('https://reactbanshop.herokuapp.com/user/login',data).then(res=>setRes(res.data)).catch(err=>console.log(err))
     }
     useEffect(()=>{
         if(RES){

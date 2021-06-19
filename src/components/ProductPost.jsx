@@ -36,7 +36,7 @@ const ProductPost = () => {
         e.preventDefault();
         const headers = { 'Accept': 'application/json', 'Content-Type': 'application/json' }
         headers['Authorization'] = token
-        const dat = await axios.post('/product/create', data,{headers:headers})
+        const dat = await axios.post('https://reactbanshop.herokuapp.com/product/create', data,{headers:headers})
         setmsg(dat.data.msg)
     }
    useEffect(() => {
