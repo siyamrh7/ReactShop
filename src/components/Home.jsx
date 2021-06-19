@@ -5,6 +5,7 @@ import React from 'react'
 import { Grid,Container ,Box } from '@material-ui/core'
 const Home = () => {
     const {products,search}=useSelector(state=>state.productReducer)
+    if(products.length===0){return <h1>Loading...</h1>}
     return (
         <Container component={Box} mt={5}>
             <Grid container justify="flex-start" spacing={5}
