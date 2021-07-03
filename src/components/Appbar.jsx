@@ -56,7 +56,6 @@ if(token===null){
                       }}
                     />
 
-                    <Button className="search"style={{position:"absolute",right:"17.9%",top:"29%"}} variant="contained" color="primary" >Search</Button>
             <Button color="inherit" onClick={()=>dispatch({type:"REGISTER"})} style={{marginLeft:"2rem",marginRight:"1rem"}}>register</Button><Button color="inherit" onClick={()=>dispatch({type:"LOGIN"})}style={{marginLeft:"1rem",marginRight:"1rem"}}>login</Button>
             
             
@@ -95,7 +94,7 @@ if(token===null){
                         },
                       }}
                     />
-                     <Button className="search" style={{position:"absolute",right:"25.5%",top:"29%"}} variant="contained" color="primary" >Search</Button>
+                   
                 <Button color="inherit" component={Link} to="/product/create" startIcon={<AddToPhotosIcon/>} style={{marginLeft:"2rem",marginRight:"1rem"}}>Product</Button>
                 <Button color="inherit" component={Link} to="/order" style={{marginLeft:"1rem",marginRight:"1rem"}}>Orders</Button>
                 <Button onClick={logout} color="inherit" size="small" startIcon={<ExitToAppIcon />} style={{marginLeft:"1rem",marginRight:"1rem"}} >
@@ -134,7 +133,7 @@ if(token===null){
                         },
                       }}
                     />
-                     <Button className="search" style={{position:"absolute",right:"23.15%",top:"29%"}} variant="contained" color="primary" >Search</Button>
+                    
                 <Button color="inherit"  component={Link} to="/cart" style={{marginLeft:"1rem",marginRight:"1rem"}} startIcon={<ShoppingCartIcon />}>Cart</Button>
                 <Button color="inherit"  component={Link} to="/history" style={{marginLeft:"1rem",marginRight:"1rem"}} >History</Button>
                 <Button onClick={logout} color="inherit" size="small" startIcon={<ExitToAppIcon />} style={{marginLeft:"1rem",marginRight:"1rem"}} >
